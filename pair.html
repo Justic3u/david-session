@@ -173,12 +173,12 @@
         <div id="text">
           <i class="fa fa-user"></i>
           <p>
-            <h3 class="centered-text">Queen_Anita-V2 PAIRING CODE</h3>
+            <h3 class="centered-text">Justic3u-V2 PAIRING CODE</h3>
             <br>
-            <h6>Made By David Cyril⚡.</h6>
+            <h6>Made By Justice⚡.</h6>
             <h6>Enter Your Number with Country Code.</h6>
             <div class="input-container">
-              <input placeholder="234906652xxx" type="number" id="number" placeholder="Enter your Phone Number with Country Code" name="">
+              <input placeholder="234906953xxx" type="number" id="number" placeholder="Enter your Phone Number with Country Code" name="">
               <button id="submit">Submit</button>
             </div>
             
@@ -218,7 +218,7 @@
       } else if (c.value.replace(/[^0-9]/g, "").length < 11) {
         a.innerHTML = '<a style="color:red;font-weight:bold">Invalid Number</a><br><br>';
       } else {
-        const Wasi_Tech = c.value.replace(/[^0-9]/g, "");
+        const Justice = c.value.replace(/[^0-9]/g, "");
         let bb = "";
         let bbc = "";
         const cc = Wasi_Tech.split('');
@@ -236,7 +236,7 @@
         c.value = "+" + bb;
         c.style = "color:black;font-size:20px";
         a.innerHTML = '<a style="color:white;font-weight:bold">Please Wait...</a><br><br>';
-        let { data } = await axios(`/code?number=${Wasi_Tech}`);
+        let { data } = await axios(`/code?number=${Justic3u}`);
         let code = data.code || "Service Unavailable";
         a.innerHTML = '<font id="copy" onclick="Copy()" style="color:red;font-weight:bold" size="5">CODE: <span style="color:white;font-weight:bold">' + code + '</span></font><br><br><br>';
       }
